@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Latihan</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="showPopup()">
+<ul>
+    <li><a href="MenuUtama.html">Home</a></li>
+    <li>
+        <a href="#">Pertemuan 2 ▾</a>
+        <ul class="dropdown">
+            <li><a href="Pertemuan2/Latihan1.html">Latihan 1</a></li>
+            <li><a href="Pertemuan2/Latihan2.html">Latihan 2</a></li>
+            <li><a href="Pertemuan2/Home.html">Latihan 3</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">Pertemuan 3 ▾</a>
+        <ul class="dropdown">
+            <li><a href="Pertemuan3/latihan1.html">Latihan 1</a></li>
+            <li><a href="Pertemuan3/latihan2.html">Latihan 2</a></li>
+            <li><a href="Pertemuan3/relion.html">Latihan 3</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">Pertemuan 4 ▾</a>
+        <ul class="dropdown">
+            <li><a href="Pertemuan4/penyisipan.html">Latihan 1</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">Pertemuan 5 ▾</a>
+        <ul class="dropdown">
+            <li><a href="Pertemuan5/home.html">Latihan 1</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">Pertemuan 6 ▾</a>
+        <ul class="dropdown">
+            <li><a href="Pertemuan6/latihan1.html">Latihan 1</a></li>
+            <li><a href="Pertemuan6/latihan2.html">Latihan 2</a></li>
+            <li><a href="Pertemuan6/komponen.html">Latihan 3</a></li>
+        </ul>
+    </li>
+    ul>
+    </li>
+    <li>
+        <a href="#">Pertemuan 8 ▾</a>
+        <ul class="dropdown">
+            <li><a href="Pertemuan8/latihan1.html">Latihan 1</a></li>
+            <li><a href="Pertemuan8/form.html">Latihan 2</a></li>
+        </ul>
+    </li>
+</ul>    
+
+<div class="modal" id="popup">
+    <div class="modal-content">
+        <label for="modal-toggle" class="close" onclick="hidePopup()">&times;</label>
+        <h2>Tugas Pemrograman Web</h2>
+        <br>
+        <pre>
+        <p><strong>Nama     :</strong> Randika Pratama</p>
+        <p><strong>NIM      :</strong> 211011401339</p>
+        <p><strong>Kelas    :</strong> 05TPLP018</p>
+        </pre>
+    </div>
+</div>
+
+<script>
+    function showPopup() {
+        document.getElementById('popup').style.display = 'block';
+    }
+    
+    function hidePopup() {
+        document.getElementById('popup').style.display = 'none';
+    }
+    </script>
+
+</body>
+</html>
